@@ -164,6 +164,35 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
     resetProject()
 
+    // hire request beghavior
+    function hiredCall(){
+        let hired=document.querySelectorAll(".call-hired")
+        hired.forEach(hiredRequest=>{
+            hiredRequest.addEventListener("click",function(){
+                document.body.style.background="rgba(0, 0, 0, 0.5)";
+                document.getElementById("hello-world").style.display="none"
+                document.getElementById("hire-prompt").style.display="block"
+                let responde=document.querySelectorAll("#responde")          
+                responde.forEach(respondeEl=>{
+                    respondeEl.style.display="none"
+                })         
+            })
+        })
+    }
+    hiredCall()
+    // cancell all in hired-call
+    function resetCall(){
+        document.getElementById("cancel-all").addEventListener("click",()=>{
+            document.body.style.background="";
+                document.getElementById("hello-world").style.display="flex"
+                document.getElementById("hire-prompt").style.display="none"
+                let responde=document.querySelectorAll("#responde")          
+                responde.forEach(respondeEl=>{
+                    respondeEl.style.display="block"
+                })         
+        })
+    }
+    resetCall()
     // l'm clearing forms once submitted 
 
     function clearFormAfterSubmission() {

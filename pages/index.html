@@ -12,6 +12,7 @@
     <link rel="icon" href="../images/icon.png" type="image/x-icon">
     <!-- ----------js -->
     <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <!-- font roboto-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <!-- w3responsive---->
@@ -75,21 +76,38 @@
             </div>
             <div class="visual-profile">
                 <h2>Fueled by</h2><br>
-                <div class="wrap-fuel"><img src="../images/coffee.jpeg" alt=""></div>
+                <div class="wrap-fuel"><img src="../images/coffee.png" alt=""></div>
                 <div class="wrap-fuel"><img src="../images/bike.png" alt=""></div>
-                <div class="wrap-fuel"><img src="../images/camera.webp" alt=""></div><br>
+                <div class="wrap-fuel"><img src="../images/coffee.png" alt=""></div><br>
                 <br> <button id="hire-me"><i class="uil uil-thumbs-up">10k</i> liked my portifolio</button><br>
                 <br><div>
-                    <button id="get-info"><a href="../files/cv.pdf"><i class="uil uil-file-download-alt"></i>cv</a></button>
-                    <button id="get-info">hire me</button>
+                    <button id="mycv"><a href="../files/cv.pdf">get cv</a></button>
+                    <button class="call-hired">hire me</button>
                 </div>
 
             </div>
         </div>              
     </section>
-    <section id="hire-popup">
-        <div class="hire-wrapper">
-            
+    <section id="hire-prompt">
+        <button id="cancel-all"><i class="uil uil-times-circle"></i></button>
+        <div class="match-found">
+            <div class="left-col">
+                <h4>You can hire me by filling out the form.</h4><br>
+                <form id="hireme-form" action="">
+                    <div class="about-project">
+                        <input type="email" placeholder="your email"><br>
+                        <input id="project-title" type="text" placeholder="project title"><br>                        <textarea name="" id="" placeholder="describe your project"></textarea>
+                    </div><br>
+                    <h6>OR UPLOAD PDF FILE</h6>
+                    <input type="file" name="" id="upload-project"><br>
+                    <button id="go-hired" type="submit">submit</button>
+
+                </form>
+            </div>
+            <div class="right-col">
+                <h2 class="font-effect-shadow-multiple">You are hiring Wilson and <br> a full-stack developer.</h2>
+                <img src="../images/codejob.png" alt="">
+            </div>
         </div>
     </section>
     <!-- project demo section   -->
@@ -118,7 +136,7 @@
     
     <main id="responde"> 
         <div class="scroll-down">
-            <a href="#about" target="_blank" class="down-scroll">
+            <a href="#about-me" target="_blank" class="down-scroll">
                scroll down
             </a>
             <br>
@@ -136,7 +154,7 @@
                     </div><br>
                     <img src="../images/wilson.png" alt="">
                 </div>
-                <div class="text-info w3-container">
+                <div class="text-info">
                     <div class="btn-container">
                         <button id="engagement" class="active">Engagement</button>
                         <button id="biography">Biography</button>
@@ -333,7 +351,8 @@
                     <div class="paragraph">
                         <h3>phone(whatsapp) <br> number +250790080450 <br></h3>
                         <h3>email adress <br>rukundowilson5@gmail.com <br></h3>
-                        <br> <a href="hireme.html" target="_blank" class="btn">hire me</a>
+                        <br><button class="call-hired">hire me</button>
+
                     </div>
                 </div>
                 <div class="main-contact">
@@ -343,7 +362,7 @@
                             <input type="tel" id="phone" name="phone" placeholder="phone number" autocomplete="on" required>
                         </div>
                         <div>
-                            <textarea id="message" name="message" cols="47" rows="14" placeholder="Type a message" required></textarea>
+                            <textarea id="message" name="message" cols="47" rows="14" placeholder="Type a message" required></textarea><br>
                         </div>
                         <button type="submit" id="sbmt">SEND<i class="uil uil-message"></i></button>
                         <div id="notification">
