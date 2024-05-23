@@ -80,16 +80,42 @@ body,html{
     border-radius: 10px;
 }
 .wrap-fuel{
-    width: 120px;
-    height: 100px;
+    width: 80px;
+    height: 70px;
     border-radius: 50%;
     display: inline-block;
     background: #fff;
     
 }
+.decorated{
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+
+}
+.decorated img{
+    width: 100%;
+    max-height: 60%;
+    border-radius: 10px 10px 0 0;
+}
+.l-this{
+    padding: 10px;
+}
+.l-this img{
+    background: none;
+    width: 50px;
+    height: 50px;
+}
+.l-this a{
+    background: #0000cd80;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+
+}
 .hello-picture{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 .visual-profile #get-info{
     background: #0a0ac738;
@@ -220,7 +246,9 @@ nav:hover{
 #hire-prompt{
     display: none;
 }
-.call-hired,#mycv{
+.call-hired,
+#mycv,
+#mycv a{
     background-color: #0000cd3d;
     padding: 12px;
     border: none;
@@ -228,6 +256,7 @@ nav:hover{
     cursor: pointer;
     border-radius: 7px;
     transition: 500ms ease-in-out;
+    text-decoration: none;
 }
 .call-hired:hover,
 #mycv:hover{
@@ -383,7 +412,7 @@ nav:hover{
     font-size: 1.5rem;
 }
 
-.uil-angle-double-down {
+.uil-mouse-alt-2{
     margin: 20px;
     font-size: 4rem;
     color: #0000cd;
@@ -392,13 +421,13 @@ nav:hover{
 .animate-scroll {
     animation: slidemove 4s ease-in-out infinite;
 }
-@keyframes slidemove{
+/* @keyframes slidemove{
     0% { transform: translateY(0); }
     50%{ 
         transform: translateY(25px); 
     } 
     100% { transform: translateY(0); }
-}
+} */
 /* About Me Section */
 #about-me {
     margin: 60px 0 170px 0;
@@ -488,10 +517,30 @@ nav:hover{
     display: flex;
     justify-content: center;
 }
-
-
+.looking{
+    display: flex;
+    justify-content: center;
+}
+.active-project{
+    border: 3px solid #fff;
+    background-color: #000000e5;
+    padding: 30px;
+    max-height: 300px;
+    overflow-y: scroll;
+    color: #ffffffa8;
+    margin: 0 15px 10px 15px;
+}
+.active-project span{
+    background-color: green;
+    padding: 1px 10px 1px 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.active-project h2{
+    text-decoration: dotted;
+}
 .wrapper {
-    margin: 20px;
+    margin: 20px 20px 0 20px;
     padding: 30px;
     background-color: #fff;
     max-width: fit-content;
@@ -531,24 +580,18 @@ nav:hover{
     align-items: center;
 }
 #desc-project{
-    max-width: 700px;
+    max-width: 500px;
     padding: 40px;
     display: none;
     background-color: red;
     background: #fff;
     border-radius: 5px;
-}
-.background img{
-    max-width: 200px;
-    height: 170px;
+    margin: 10px 25px;
 }
 .project-img{
     background-color: #0092e4;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+    margin: 20px 0 12px 0;
+    padding: 20px;
 }
 .ui-desc{
     text-align: center;
@@ -556,9 +599,12 @@ nav:hover{
 }
 #get-info,
 #cancel{
-    border: none;
     background: none;
+    border: none;
     transition: 500ms ease-in-out;
+}
+.cancel-wrapper{
+   margin: 0 20px 10px 40px;
 }
 #get-info:hover,
 #cancel:hover{
@@ -610,11 +656,10 @@ nav:hover{
 }
 
 .wrap-skills {
-    margin: 20px 0 0 0;
+    margin: 20px 10px 0 10px;
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
-    min-width: 350px;
 }
 .wrap-skills ul {
     list-style: none;

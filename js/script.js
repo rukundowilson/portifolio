@@ -96,7 +96,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     function linkSelected(event) {
         let clickedLink = event.target;
         let activeButton = document.getElementsByClassName("active")[0];
-        
         if (activeButton) {
             activeButton.classList.remove("active");
         }
@@ -136,29 +135,28 @@ document.addEventListener('DOMContentLoaded',()=>{
             respondeEl.style.display="none"
         })
         applyChanges()
-        
 
     }
     generateResponse()
     // apply some changes
     function applyChanges(){
-        document.getElementById("desc-project").style.boxShadow="0 0 20px 0 rgba(0, 0, 0, 0.5)"
         document.getElementById("nav-bottom").style.display="none"
         document.body.style.background="rgba(0, 0, 0, 0.5)";
         document.getElementById("hello-world").style.display="none"
+        document.getElementById("desc-projects").style.display="flex"
     }
     // reset changes for project responses
     function resetProject(){
         document.getElementById("cancel").addEventListener("click",function(){
             document.body.style.background="#cccccc54";
             let responde=document.querySelectorAll("#responde")
-            document.getElementById("desc-project").style.display="block"
+            document.getElementById("desc-projects").style.display="block"
             
             responde.forEach(respondeEl=>{
                 respondeEl.style.display="block"
             })
             document.getElementById("hello-world").style.display="flex"
-            document.getElementById("desc-project").style.display="none"
+            document.getElementById("desc-projects").style.display="none"
             document.getElementById("nav-bottom").style.display="block"
         })
     }
@@ -196,7 +194,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     // l'm clearing forms once submitted 
 
     function clearFormAfterSubmission() {
-        const form = document.querySelector("form");
+        const form = document.getElementById("request-contact");
         form.addEventListener("submit", async (event) => {
             event.preventDefault(); // Prevent default form submission behavior
 

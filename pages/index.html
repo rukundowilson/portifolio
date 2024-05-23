@@ -67,24 +67,35 @@
                 <div class="hello-picture">
                     <img src="../images/wilson.png" alt="">
                 </div>
-                <h4>Rukundo <br><span id="willy">@wilson</span></h4> <br>
+                <h2>Rukundo <br><span id="willy">@wilson</span></h2> <br>
                 <p>Full stack Web developer<br>Based in Rwanda </p><br>
-                <a href="https://github.com/rukundowilson"><i class="uil uil-github-alt"></i></a>
+                <a href="https://github.com/rukundowilson" target="_blank"><i class="uil uil-github-alt"></i></a>
                 <a href=""><i class="uil uil-linkedin"></i></a>
-                <a href=""><i class="uil uil-gitlab"></i></a>
+                <a href="" target=""><i class="uil uil-gitlab"></i></a>
                 <a href=""><i class="uil uil-instagram"></i></a>
             </div>
             <div class="visual-profile">
-                <h2>Fueled by</h2><br>
+                <h1>Fueled by:</h1><br>
                 <div class="wrap-fuel"><img src="../images/coffee.png" alt=""></div>
                 <div class="wrap-fuel"><img src="../images/bike.png" alt=""></div>
                 <div class="wrap-fuel"><img src="../images/coffee.png" alt=""></div><br>
                 <br> <button id="hire-me"><i class="uil uil-thumbs-up">10k</i> liked my portifolio</button><br>
                 <br><div>
-                    <button id="mycv"><a href="../files/cv.pdf">get cv</a></button>
+                    <button id="mycv"><a href="../files/cv.pdf" target="_blank">get cv</a></button>
                     <button class="call-hired">hire me</button>
                 </div>
+            </div>
+            <div class="decorated">
+                <img src="../images/lcodethis.jpeg" alt="">
+                <div class="l-this">
+                    <p>lcodethis blonze</p>
+                    <img src="../images/blonze.png" alt="">
+                    <img src="../images/blonze.png" alt="">
+                    <img src="../images/blonze.png" alt="">
+                    <p>Visit profile</p><br>
+                    <a href="https://icodethis.com/willy_scriptor" target="_blank">icodethis profile</a><br>
 
+                </div>
             </div>
         </div>              
     </section>
@@ -93,16 +104,18 @@
         <div class="match-found">
             <div class="left-col">
                 <h4>You can hire me by filling out the form.</h4><br>
-                <form id="hireme-form" action="">
+                <form id="hireme-form" action="https://formspree.io/f/mayrzogw" method="POST">
                     <div class="about-project">
-                        <input type="email" placeholder="your email"><br>
-                        <input id="project-title" type="text" placeholder="project title"><br>                        <textarea name="" id="" placeholder="describe your project"></textarea>
+                        <input type="email" placeholder="your email" name="_replyto" required><br>
+                        <input id="project-title" type="text" placeholder="project title" name="message" required><br> 
+                        <textarea id="project-description" placeholder="describe your project" name="message" required></textarea>
                     </div><br>
                     <h6>OR UPLOAD PDF FILE</h6>
-                    <input type="file" name="" id="upload-project"><br>
+                    <input type="file" name="upload" id="upload-project" accept=".pdf"><br>
                     <button id="go-hired" type="submit">submit</button>
-
                 </form>
+                
+                
             </div>
             <div class="right-col">
                 <h2 class="font-effect-shadow-multiple">You are hiring Wilson and <br> a full-stack developer.</h2>
@@ -111,27 +124,30 @@
         </div>
     </section>
     <!-- project demo section   -->
+
     <section id="desc-projects">
         <div id="desc-project">
-            <button id="cancel"><i class="uil uil-times-circle"></i></button>
+            <div class="cancel-wrapper">
+                <button id="cancel"">
+                    <i class="uil uil-times-circle"></i>
+                </button>
+            </div>
             <div class="background">
                 <h1>hello world</h1>
                 <h5>Hangman game built via html and java script</h5>
-                <p>Developing and playing a Hangman game involves a blend of linguistic knowledge and strategic thinking, making it both educational and engaging. From the developer's perspective, programming the game requires proficiency in software development, including understanding user interface design, handling input/output operations, and implementing logical game flow. Additionally, developers must have a grasp of data structures for storing the word lists and algorithms to select words randomly and process guesses. On the player's side, Hangman enhances vocabulary, as players must think of possible words that fit the given blanks and the letters already guessed. It also requires deductive reasoning, as players need to strategically choose their guesses to avoid exhausting their limited number of incorrect attempts. This combination of skills makes Hangman not only fun but also a brain-stimulating challenge."</p>
+                <p>Developing and playing a Hangman game involves a blend of linguistic knowledge and strategic thinking, making it both educational and engaging. </p>
+                <p>PLay Hangman, the old school favorite! A word game where the goal is simply to find the missing word or words by guessing letters.</p>
                 <div class="project-img">
                     <div class="ui-desc">
-                        <img src="../images/ui-hangman.png" alt="">
-                        <p>UI for hangman game</p>
-                        <a href="#">link for game</a>
+                        <p>link for Hangman game</p>
+                        <a href="https://rukundowilson.github.io/playhangman/" target="_blank">link for game</a>
                     </div>
                     <div class="ui-desc">
-                        <ui-desc><img src="../images/ui-loss.png" alt=""></ui-desc>
-                        <p>ui for handling game losses</p>
+                        <p>link provided take you to the game</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
     
     <main id="responde"> 
@@ -142,8 +158,7 @@
             <br>
             <div class="animate-scroll">
                 <a href="#about-me">
-                    <i class="uil uil-angle-double-down"></i>
-                </a>
+                    <i class="uil uil-mouse-alt-2"></i>                </a>
             </div>
         </div>
         <section id="about-me">
@@ -235,6 +250,21 @@
                 </div>
             </div>
         </section>
+        <div class="looking">
+            <div class="active-project">
+
+                <h2>project trend status</h2>
+                --------------------------------------------------
+                <h3 style="color: hsl(106, 100%, 25%);"><span> </span> personal project working on~: active.</h3>
+                <h4 style="color: yellow;">#satisified clients~: ............. 80%.</h4>
+                <h5 style="color: yellow;">#clients being served by now~:...none.</h5>
+                <h4 style="color: red;">#Failed projects~: ......... 0 counts.</h4>
+                <h4 style="color: hwb(120 0% 50%);">#ready to take new project~: .........true.</h4>
+                <h3>#client's completed project~: 3.</h3>
+                <h4>#personal completed projects~: 100.</h4>
+
+            </div>
+        </div>
         <section id="skills">
             <div class="title">
                 <h2>Skills</h2>
@@ -356,7 +386,7 @@
                     </div>
                 </div>
                 <div class="main-contact">
-                    <form action="https://formspree.io/f/mbjnwloa" method="POST">
+                    <form id="request-contact" action="https://formspree.io/f/mbjnwloa" method="POST">
                         <div>
                             <input type="email" placeholder="example@gmail.com" id="email" autocomplete="on" name="_replyto" required>
                             <input type="tel" id="phone" name="phone" placeholder="phone number" autocomplete="on" required>
